@@ -1,0 +1,5 @@
+﻿export type PageId = "opportunities"|"projects"|"tenders"|"collaborations"|"partners"|"startups"|"careers"|"detail"|"application"|"news"|"article"|"catalogue"|"studies"|"case-studies"|"guides"|"institutional"|"events"|"archives";
+export const routePaths: Record<PageId,string> = {
+ opportunities:"/opportunites",projects:"/opportunites/appels-a-projets",tenders:"/opportunites/appels-doffres",collaborations:"/opportunites/projets-collaboratifs",partners:"/opportunites/recherche-partenaires",startups:"/opportunites/programmes-startups",careers:"/opportunites/opportunites-professionnelles",detail:"/opportunites/detail-appel-doffres",application:"/opportunites/candidature",
+ news:"/ressources/actualites",article:"/ressources/actualites/cloud-souverain",catalogue:"/ressources",studies:"/ressources/etudes-rapports","case-studies":"/ressources/etudes-de-cas",guides:"/ressources/guides-pratiques",institutional:"/ressources/publications-institutionnelles",events:"/ressources/evenements",archives:"/ressources/archives"
+};

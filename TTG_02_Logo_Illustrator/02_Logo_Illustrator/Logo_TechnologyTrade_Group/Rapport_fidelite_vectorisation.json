@@ -1,0 +1,37 @@
+{
+ "source": "Untitled_Project_-_illustrationimage_LONG.png (370 x 109 px, raster)",
+ "methode": "vectorisation par contours (composantes connexes tracées : 18 formes pour le symbole, 19 pour le nom de marque ; filet = rectangle) - aucune police substituée",
+ "fidelite_vs_original": {
+  "IoU_masque": 0.9776,
+  "ecart_moyen_par_pixel_sur_255": 3.16,
+  "pixels_avec_ecart_sup_40_pct": 0.44,
+  "noeuds_total": 1811,
+  "remarque": "mesuré sur l'original 370x109 px, hors zone du filet ; l'écart résiduel est concentré sur les bords anti-crénelés de la source"
+ },
+ "controle_EPS_IoU_vs_rendu_de_reference": {
+  "Logo_principal_couleur": 0.9999,
+  "Logo_principal_noir": 0.9999,
+  "Logo_principal_monochrome": 0.9999,
+  "Logo_principal_blanc": 0.9732,
+  "Logo_horizontal_couleur": 0.9919,
+  "Logo_horizontal_noir": 0.9919,
+  "Logo_horizontal_monochrome": 0.9919,
+  "Logo_horizontal_blanc": 0.968,
+  "Symbole_couleur": 0.9998,
+  "Symbole_noir": 0.9998,
+  "Symbole_monochrome": 0.9998,
+  "Symbole_blanc": 0.9998,
+  "Nom_de_marque_couleur": 1.0,
+  "Nom_de_marque_noir": 1.0,
+  "Nom_de_marque_monochrome": 1.0,
+  "Nom_de_marque_blanc": 1.0
+ },
+ "controle_PDF": "aucune police déclarée dans les 18 PDF (contours uniquement) : True",
+ "reserves": [
+  "Le nom de marque d'origine n'est PAS en Montserrat : il est conservé en contours tracés.",
+  "La source est de faible résolution (370 px) : les bords vectorisés lissent le crénelage de l'original (±0,5 px source).",
+  "Variante « horizontal » (une ligne) : présente sur la planche à très petite taille ; reconstituée à partir des mêmes contours, espacement entre les deux mots approximatif.",
+  "Variantes noir / monochrome : valeurs dérivées (Graphite 30/30/30 ; gris 120/120/120), non documentées par la planche.",
+  "Aucune version verticale : absente de la référence."
+ ]
+}
