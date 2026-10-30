@@ -34,3 +34,16 @@ test("institutional pages use the shared shell and original brand assets", () =>
   assert.equal(existsSync("app/presentation-du-groupe/page.tsx"), true);
   assert.equal(existsSync("app/page.tsx"), true);
 });
+
+test("the governance page uses the two supplied member portraits", () => {
+  const component = readFileSync("components/InstitutionalPages.tsx", "utf8");
+  assert.match(component, /Roslain Daril KINGUENGA/);
+  assert.match(component, /Smith Blave MAYINDOU D\./);
+  assert.match(component, /Président-directeur général/);
+  assert.match(component, /Agent spécial & Responsable sécurité/);
+  assert.match(component, /\/members\/roslain-daril-kinguenga\.jpeg/);
+  assert.match(component, /\/members\/smith-blave-mayindou\.png/);
+  assert.equal(existsSync("public/members/roslain-daril-kinguenga.jpeg"), true);
+  assert.equal(existsSync("public/members/smith-blave-mayindou.png"), true);
+  assert.doesNotMatch(component, /Mireille Okoumou|Samuel Adjei|Fatou Diallo/);
+});

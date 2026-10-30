@@ -223,16 +223,21 @@ function LegalDocument({ id }: { id: "conditions" | "confidentialite" | "mention
 }
 
 const leaders = [
-  ["MO", "Mireille Okoumou", "Directrice générale", "Direction générale"],
-  ["SA", "Samuel Adjei", "Directeur de la marketplace", "Marketplace"],
-  ["FD", "Fatou Diallo", "Directrice technique", "Technologie"],
-  ["JB", "Jean-Baptiste M.", "Chief Executive Officer", "Partenariats"],
-  ["AK", "Aminata Konaté", "Directrice des opérations", "Opérations"],
-  ["ET", "Eric Tshibangu", "Directeur financier", "Finance"],
+  {
+    name: "Roslain Daril KINGUENGA",
+    role: "Président-directeur général",
+    team: "Bureau exécutif",
+    photo: "/members/roslain-daril-kinguenga.jpeg",
+  },
+  {
+    name: "Smith Blave MAYINDOU D.",
+    role: "Agent spécial & Responsable sécurité",
+    team: "Sécurité",
+    photo: "/members/smith-blave-mayindou.png",
+  },
 ] as const;
-const boards = [["Conseil d’administration", "Orientations stratégiques et contrôle"], ["Comité d’éthique et de conformité", "Vérification des fournisseurs, médiation"], ["Comités régionaux", "Cinq comités consultatifs"]] as const;
 function Governance() {
-  return <><main className="institutional-container institutional-section leaders-section"><p className="institutional-eyebrow">Équipe de direction</p><h2>Les personnes qui pilotent le groupe</h2><div className="leader-grid">{leaders.map(([initials, name, role, team]) => <article key={name}><div className="leader-art"><span>{initials}</span></div><h3>{name}</h3><p>{role}</p><small>{team}</small></article>)}</div></main><section className="governance-section"><div className="institutional-container"><div><h2>Gouvernance</h2><p>Trois instances garantissent l’indépendance et la qualité de la plateforme.</p></div><div className="governance-boards">{boards.map(([title, desc]) => <article key={title}><Scale size={20} /><div><h3>{title}</h3><p>{desc}</p></div><span>Composition</span></article>)}</div></div></section></>;
+  return <><main className="institutional-container institutional-section leaders-section"><p className="institutional-eyebrow">Membres de TechnologyTrade Group</p><h2>Les membres actuellement présentés</h2><div className="leader-grid">{leaders.map(({ name, role, team, photo }) => <article key={name}><div className="leader-art leader-art--photo"><Image src={photo} alt={`Portrait de ${name}`} fill sizes="(max-width: 720px) 50vw, 33vw" /></div><h3>{name}</h3><p>{role}</p><small>{team}</small></article>)}</div></main><section className="governance-section"><div className="institutional-container"><div><h2>Gouvernance</h2><p>La composition officielle des instances de gouvernance sera publiée après validation.</p></div></div></section></>;
 }
 
 const jobs = [

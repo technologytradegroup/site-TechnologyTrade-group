@@ -210,6 +210,9 @@
 .leader-art:before,.leader-art:after{position:absolute;width:23%;height:33%;border:1px solid #29436b;border-radius:9px;background:#142d55;content:""}
 .leader-art:before{left:25%;top:26%}.leader-art:after{right:24%;bottom:20%;width:27%;height:42%}
 .leader-art span{z-index:1;width:82px;height:82px;display:grid;place-items:center;border-radius:50%;color:white;background:#324d79;font-size:28px;font-weight:700}
+.leader-art--photo{aspect-ratio:4/3;background:#e8ebf0}
+.leader-art--photo:before,.leader-art--photo:after{display:none}
+.leader-art--photo img{object-fit:cover;object-position:center 25%}
 .leader-grid h3{margin:12px 0 0;font-size:16px}.leader-grid article>p{margin:1px 0;color:#777;font-size:13px}.leader-grid small{color:#666;font-size:11px}
 .governance-section{padding:64px 0;background:var(--inst-light)}
 .governance-section>.institutional-container{display:grid;grid-template-columns:.75fr 1.25fr;gap:55px}

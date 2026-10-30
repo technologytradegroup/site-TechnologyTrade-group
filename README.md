@@ -5,6 +5,7 @@ Prototype Next.js des parcours TechnologyTrade Group. Les références desktop d
 ## Parcours disponibles
 
 - Site public : accueil, présentation du groupe et pages institutionnelles.
+- Gouvernance : portraits publics des membres présentés, servis depuis `public/members`.
 - Marketplace : catalogues, recherche, filtres, détails d’offres et fournisseurs, comparaison, favoris, devis et démonstration.
 - Demande : parcours guidé en sept étapes, confirmation et suivi.
 - Espace client : inscription et connexion de démonstration, profil, demandes, devis, commandes, documents et paramètres.
