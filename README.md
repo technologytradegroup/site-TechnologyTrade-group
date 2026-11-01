@@ -44,7 +44,7 @@ Sans configuration Supabase, `/admin` affiche un état explicite et ne révèle 
 
 ## Publication sur Vercel
 
-Le projet de production est accessible à `https://site-technology-trade-group.vercel.app`. Le domaine répond actuellement, mais la route `/admin` n’est pas encore présente dans le déploiement en ligne; les changements locaux doivent être publiés pour la rendre disponible. Le projet doit être importé depuis le dépôt GitHub `technologytradegroup/site-TechnologyTrade-group`, à sa racine. Dans Vercel, configurez les variables du backend et conservez les réglages détectés pour Next.js :
+Le projet de production est accessible à `https://site-technology-trade-group.vercel.app`. Après publication, la route `/admin` redirige bien une session absente vers la connexion; aucun compte super-administrateur n’est encore autorisé. Le projet est importé depuis le dépôt GitHub `technologytradegroup/site-TechnologyTrade-group`, à sa racine. Les variables Supabase sont définies pour Production dans Vercel; conservez les réglages détectés pour Next.js :
 
 - Répertoire racine : `./`
 - Commande de build : `npm run build`
