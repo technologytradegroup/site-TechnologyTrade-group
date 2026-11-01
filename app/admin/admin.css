@@ -1,0 +1,182 @@
+.ttg-admin-shell {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #14213d;
+}
+
+.ttg-admin-header,
+.ttg-admin-nav,
+.ttg-admin-content {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.ttg-admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 26px;
+}
+
+.ttg-admin-kicker {
+  margin: 0 0 6px;
+  color: #62728a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ttg-admin-brand {
+  color: #14213d;
+  font-size: 1.2rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.ttg-admin-account {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #46556c;
+  font-size: 0.9rem;
+}
+
+.ttg-admin-account button,
+.ttg-admin-link {
+  border: 0;
+  background: none;
+  color: #087c61;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.ttg-admin-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #dfe5ed;
+}
+
+.ttg-admin-nav a {
+  padding: 12px 16px;
+  color: #46556c;
+  text-decoration: none;
+}
+
+.ttg-admin-nav a[aria-current="page"] {
+  border-bottom: 3px solid #087c61;
+  color: #14213d;
+  font-weight: 700;
+}
+
+.ttg-admin-content {
+  padding-block: 36px 64px;
+}
+
+.ttg-admin-content h1,
+.ttg-admin-message h1 {
+  margin: 0 0 12px;
+  color: #14213d;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.ttg-admin-intro {
+  margin: 0;
+  max-width: 720px;
+  color: #56657a;
+  line-height: 1.65;
+}
+
+.ttg-admin-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.ttg-admin-metric {
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid #e0e6ee;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.ttg-admin-metric h2 {
+  margin: 0 0 12px;
+  color: #56657a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.ttg-admin-metric strong {
+  display: block;
+  color: #14213d;
+  font-size: 2rem;
+}
+
+.ttg-admin-metric p {
+  margin: 6px 0 0;
+  color: #68778c;
+  font-size: 0.82rem;
+}
+
+.ttg-admin-error {
+  margin-top: 20px;
+  color: #a12626;
+}
+
+.ttg-admin-message {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: #f5f7fa;
+}
+
+.ttg-admin-message section {
+  width: min(600px, 100%);
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid #e0e6ee;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 18px 60px rgb(20 33 61 / 8%);
+}
+
+.ttg-admin-message p:not(.ttg-admin-kicker) {
+  margin: 0 0 20px;
+  color: #56657a;
+  line-height: 1.65;
+}
+
+.ttg-admin-link {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+@media (max-width: 620px) {
+  .ttg-admin-header,
+  .ttg-admin-nav,
+  .ttg-admin-content {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .ttg-admin-header,
+  .ttg-admin-account {
+    align-items: flex-start;
+  }
+
+  .ttg-admin-header {
+    flex-direction: column;
+  }
+
+  .ttg-admin-account {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
