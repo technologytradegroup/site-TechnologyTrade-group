@@ -166,7 +166,7 @@ function GroupFooter() {
             </Link>
             <p>Relier les technologies, faire avancer le commerce, bâtir l’avenir de l’Afrique.</p>
             <div className="social-links" aria-label="Réseaux sociaux">
-              <span aria-label="LinkedIn">in</span><span aria-label="Twitter">t</span><span aria-label="YouTube">▶</span><span aria-label="Facebook">f</span>
+              <span aria-label="LinkedIn">in</span><span aria-label="Twitter">t</span><span aria-label="YouTube">▶</span><span aria-label="Facebook"><a href="https://www.facebook.com/share/1bMrqSQ2tc/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">f</a></span>
             </div>
           </div>
           <div className="footer-col"><h3>Plateforme</h3><ul><li><Link href="/marketplace">Marketplace</Link></li><li><Link href="/demande/presentation-du-service">Exprimer un besoin</Link></li><li><Link href="/opportunites">Opportunités</Link></li><li><Link href="/fonctionnement-de-la-plateforme">Fonctionnement</Link></li><li><Link href="/tarifs">Tarifs</Link></li><li><Link href="/espace-client/connexion">Espace client</Link></li></ul></div>
