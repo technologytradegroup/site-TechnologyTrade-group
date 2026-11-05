@@ -295,7 +295,7 @@ export default function HomeExperience() {
         <section className="hero" id="accueil" aria-labelledby="hero-title">
           <div className="container hero-inner">
             <div className="hero-copy">
-              <p className="hero-badge"><Sparkles size={12} /> Nouveau : demandes de devis multi-fournisseurs</p>
+              <p className="hero-badge">Nouveau : demandes de devis multi-fournisseurs</p>
               <h1 id="hero-title">Le marché numérique africain, ouvert sur le monde.</h1>
               <p>Entreprises, institutions et fournisseurs de solutions technologiques se retrouvent sur une seule plateforme : découvrir, comparer, demander un devis, contractualiser.</p>
               <div className="hero-actions">
